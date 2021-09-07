@@ -1,0 +1,24 @@
+@media only screen and (min-width: 768px){
+	body{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 10vh 40vh 40vh 10vh;
+		grid-template-areas: "nav nav nav" "section section section" "main aside aside" "footer footer footer";
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	body {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 10vh 40vh 60vh 10vh;
+		grid-template-areas: "nav nav nav nav" "section section section section" "main . aside aside" "footer footer footer footer";
+	}
+}
+@keyframes textAlpha{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+

@@ -1,0 +1,98 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap');
+
+*{
+	font-family: 'Exo', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*fondos colores*/
+
+.bg-dark{
+	background-color: black
+}
+
+.bg-info{
+	background-color: #0065c3
+}
+
+/*end fondos */
+
+
+
+
+/*inicia nav */
+nav{
+	padding: 10px 40px 10px 40px;
+	display: flex;
+	flex-direction: column;
+	align-items:  center;
+}
+
+	nav ul li{
+			list-style: none;
+			display: inline-block;
+			margin: 0 10px;
+		}
+
+			nav ul li a{
+				color:white;
+				text-transform: uppercase;
+				text-decoration: none;
+			/*Subrayado animado*/
+			  	background-image: linear-gradient(currentColor, currentColor);
+   				background-position: 0% 100%;
+    			background-repeat: no-repeat;
+    			background-size: 0% 2px;
+    			transition: background-size .3s;
+			}
+
+			a:hover, a:focus {
+    			background-size: 100% 2px;
+			}
+
+/*cierra nav */
+
+#box1, #box2, #box3, #box4{
+	padding: 20px 10px 5px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#box1 img{
+		width: 100%
+	}
+
+@media screen and (min-width: 768px){
+	nav{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	section{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	section img{
+		width: 100%
+	}
+
+}
+
+
+@media screen and (min-width: 1000px){
+	section{
+		justify-content: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+nav img:hover{
+	transform: rotate(-360deg);
+	transition: transform 1s;
+}

@@ -1,0 +1,219 @@
+$bg-sky: #4ABDAC;
+$bg-orange: #FC4A1A;
+
+@for $i from 1 through 6{
+	h#{$i}{
+		font-size: 1em -$i;
+	}
+}
+
+@each $icono in fb, ig, yt, tw{
+	.#{$icono}-icono{
+		background-image: url(../img/#{$icono}.jpg);
+		width: 5%;
+		height: 5%;
+		background-size: 10%;
+		list-style: none;
+	}
+}
+a,p,h1,h2,h3{
+	font-family: $fontMain
+}
+
+nav{
+	padding: 20px;
+	img{width: 10%;}
+}
+
+article{
+	display: flex;
+	display: inline-block;
+	padding: 20px;
+	img{width: 40%;}
+}
+section{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	img{height: 40%;}
+}
+
+main{
+	padding: 20px;
+	img{width: 100%}
+}
+
+aside{
+	display: flex;
+	display: inline-block;
+	padding: 20px;
+	img{width: 30%;}
+}
+
+.welcome{
+	background-color: $bg-sky;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	color: white;
+}
+
+.welcome__title--light{
+	font-size: 2em;
+	text-align: center;
+	color: white;
+}
+
+.welcome__text--white{
+	color: white;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	text-align: center;
+}
+
+.description{
+	background-color: #FC4A1A;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	color: white;
+}
+
+.description__title--light{
+	font-size: 2em;
+	text-align: center;
+	color: white;
+}
+
+.description__text--white{
+	color: white;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	text-align: center;
+}
+
+.contacts{
+	background-color: #F7B733;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	color: white;
+}
+
+.contacts__title--light{
+	font-size: 1.5em;
+	text-align: left;
+	color: white;
+}
+
+.contacts__text--white{
+	color: white;
+	font-size: 1.5em;
+	line-height: 1.8em;
+	text-align: left;
+}
+
+.quiz{
+	background-color: $bg-orange;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	color: white;
+}
+
+.quiz__title--light{
+	font-size: 18px;
+	text-align: left;
+	color: white;
+}
+
+.quiz__text--white{
+	color: white;
+	font-size: 18px;
+	line-height: 8px;
+	text-align: left;
+}
+
+.history{
+	background-color: #A239CA;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	color: white;
+}
+
+.history__title--light{
+	font-size: 2em;
+	text-align: center;
+	color: white;
+}
+
+.history__text--white{
+	color: white;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	text-align: center;
+}
+
+.products{
+	background-color: #EAC67A;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	color: white;
+}
+
+.products__title--light{
+	font-size: 2em;
+	text-align: center;
+	color: white;
+}
+
+.products__text--white{
+	color: white;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	text-align: center;
+}
+
+.tshirts{
+	background-color: #333A56;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	color: white;
+}
+
+.tshirts__title--light{
+	font-size: 2em;
+	text-align: center;
+	color: white;
+}
+
+.tshirts__text--white{
+	color: white;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	text-align: center;
+}
+
+.shoes{
+	background-color: #CAE4DB;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	color: white;
+}
+
+.shoes__title--light{
+	font-size: 2em;
+	text-align: center;
+	color: black;
+}
+
+.shoes__text--white{
+	color: white;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	text-align: center;
+}

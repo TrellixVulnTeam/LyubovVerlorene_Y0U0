@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Luckiest+Guy&display=swap");
+@media only screen and (min-width: 768px) {
+  body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10vh 40vh 40vh 10vh;
+    grid-template-areas: "nav nav nav" "section section section" "main aside aside" "footer footer footer"; } }
+
+@media only screen and (min-width: 1024px) {
+  body {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10vh 40vh 60vh 10vh;
+    grid-template-areas: "nav nav nav nav" "section section section section" "main . aside aside" "footer footer footer footer"; } }
+
+@keyframes textAlpha {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.textSmall {
+  font-size: 1em; }
+
+.textMedium {
+  font-size: 2em; }
+
+.textBig {
+  font-size: 3em; }
+
+nav {
+  justify-content: space-between;
+  grid-area: nav;
+  animation-name: textAlpha;
+  animation-duration: 3s; }
+
+ul {
+  list-style: none;
+  text-align: center; }
+
+.nav > li {
+  float: center;
+  display: inline-block; }
+
+.nav li a {
+  background-color: #464D77;
+  color: white;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block; }
+
+.nav li a:hover {
+  background-color: #36827F; }
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px; }
+
+.nav li:hover > ul {
+  display: block; }
+
+.nav li ul li {
+  position: relative; }
+
+h1 {
+  font-size: 0em; }
+
+h2 {
+  font-size: -1em; }
+
+h3 {
+  font-size: -2em; }
+
+h4 {
+  font-size: -3em; }
+
+h5 {
+  font-size: -4em; }
+
+h6 {
+  font-size: -5em; }
+
+.fb-icono {
+  background-image: url(../img/fb.jpg);
+  width: 5%;
+  height: 5%;
+  background-size: 10%;
+  list-style: none; }
+
+.ig-icono {
+  background-image: url(../img/ig.jpg);
+  width: 5%;
+  height: 5%;
+  background-size: 10%;
+  list-style: none; }
+
+.yt-icono {
+  background-image: url(../img/yt.jpg);
+  width: 5%;
+  height: 5%;
+  background-size: 10%;
+  list-style: none; }
+
+.tw-icono {
+  background-image: url(../img/tw.jpg);
+  width: 5%;
+  height: 5%;
+  background-size: 10%;
+  list-style: none; }
+
+a, p, h1, h2, h3 {
+  font-family: "Economica", sans-serif; }
+
+nav {
+  padding: 20px; }
+  nav img {
+    width: 10%; }
+
+article {
+  display: flex;
+  display: inline-block;
+  padding: 20px; }
+  article img {
+    width: 40%; }
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; }
+  section img {
+    height: 40%; }
+
+main {
+  padding: 20px; }
+  main img {
+    width: 100%; }
+
+aside {
+  display: flex;
+  display: inline-block;
+  padding: 20px; }
+  aside img {
+    width: 30%; }
+
+.welcome {
+  background-color: #4ABDAC;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white; }
+
+.welcome__title--light {
+  font-size: 2em;
+  text-align: center;
+  color: white; }
+
+.welcome__text--white {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center; }
+
+.description {
+  background-color: #FC4A1A;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white; }
+
+.description__title--light {
+  font-size: 2em;
+  text-align: center;
+  color: white; }
+
+.description__text--white {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center; }
+
+.contacts {
+  background-color: #F7B733;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white; }
+
+.contacts__title--light {
+  font-size: 1.5em;
+  text-align: left;
+  color: white; }
+
+.contacts__text--white {
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.8em;
+  text-align: left; }
+
+.quiz {
+  background-color: #FC4A1A;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white; }
+
+.quiz__title--light {
+  font-size: 18px;
+  text-align: left;
+  color: white; }
+
+.quiz__text--white {
+  color: white;
+  font-size: 18px;
+  line-height: 8px;
+  text-align: left; }
+
+.history {
+  background-color: #A239CA;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white; }
+
+.history__title--light {
+  font-size: 2em;
+  text-align: center;
+  color: white; }
+
+.history__text--white {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center; }
+
+.products {
+  background-color: #EAC67A;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white; }
+
+.products__title--light {
+  font-size: 2em;
+  text-align: center;
+  color: white; }
+
+.products__text--white {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center; }
+
+.tshirts {
+  background-color: #333A56;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white; }
+
+.tshirts__title--light {
+  font-size: 2em;
+  text-align: center;
+  color: white; }
+
+.tshirts__text--white {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center; }
+
+.shoes {
+  background-color: #CAE4DB;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white; }
+
+.shoes__title--light {
+  font-size: 2em;
+  text-align: center;
+  color: black; }
+
+.shoes__text--white {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center; }
+
+footer {
+  background-color: #322c2c;
+  justify-content: space-beatween;
+  padding: 10px;
+  text-align: center; }
+  footer ul li {
+    list-style: none; }
+
+.footer__title--dark {
+  color: white; }
+
+.footer__icons--sm img {
+  width: 6%;
+  margin-right: 10px; }

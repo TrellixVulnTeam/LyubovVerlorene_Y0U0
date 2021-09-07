@@ -1,0 +1,49 @@
+$bg-purple: #464D77;
+$bg-acero: #36827F;
+
+nav{
+	justify-content: space-between;
+	grid-area: nav;
+	animation-name: textAlpha;
+	animation-duration: 3s;
+}			
+
+ul {
+	list-style:none;
+	text-align: center;
+
+}
+
+.nav > li {
+	float:center;
+	display: inline-block;
+}
+
+.nav li a {
+	background-color:$bg-purple;
+	color:white;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+
+}
+
+.nav li a:hover {
+	background-color:$bg-acero;
+}
+
+.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+
+}
+
+.nav li:hover > ul {
+	display:block;
+
+}
+
+.nav li ul li {
+	position:relative;
+}

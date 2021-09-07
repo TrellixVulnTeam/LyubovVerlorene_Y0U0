@@ -1,0 +1,145 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*fondos colores*/
+
+.bg-dark{
+	background-color: #262525
+}
+
+.bg-danger{
+	background-color: #C11111
+}
+
+.bg-info{
+	background-color: #0065c3
+}
+
+.bg-success{
+	background-color: #12E73F
+}
+
+.bg-warning{
+	background-color: #E76424
+}
+
+/*end fondos */
+
+
+section{
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
+}
+
+
+div{
+	color: black;
+	font-size: 2em;
+	border:solid 1px white;
+	border-radius: 5px;
+	margin: 30px;
+	height: 30vh;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+}
+
+
+/* clases para los temas de hoy*/
+
+.linear-gradient{
+	background: radial-gradient(circle, red 0%, yellow 100%);
+}
+
+.transform:hover{
+	transform: translate(10px, 20px);
+	cursor: pointer;
+	transition: all 2s;
+}
+
+.rotate:hover{
+	transform: rotate(-360deg);
+	cursor: pointer;
+	transition: transform 2s;
+}
+
+.scale:hover{
+	transform: scaleX(1.2);
+	cursor: pointer;
+	transition: transform 2s;
+}
+
+.skew:hover{
+	transform: skewX(10deg);
+	transition: transform 3s;
+	cursor: pointer;
+}
+
+@keyframes animateDiv{
+	0%{width: 100px; background-color: orange;}
+	25%{width: 300px; background-color: yellow;}
+	50%{width: 500px; background-color: red;}
+	75%{width: 300px; background-color: green;}
+	100%{width: 200px; background-color: blue;}
+}
+
+.animate{
+	animation-name: animateDiv;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	animation-duration: 3s;
+}
+
+
+.transition{
+	width: 300px;
+	height: 100px;
+	background-color: red;
+	transition: all 2s;
+}
+
+.transition:hover{
+	width: 100px;
+	cursor: pointer;
+	background-color: yellow;
+}
+
+@keyframes textAlpha{
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+
+
+h3{
+	animation-name: textAlpha;
+	animation-duration: 5s;
+}
+
+button{
+	width: 60px;
+	height: 30px;
+	border: 0;
+	border-radius: 5px;
+	background: linear-gradient(to top, yellow, red);
+	color: white;
+	transition: background 2s;
+}
+
+button:hover{
+	background: linear-gradient(to top, red, yellow);
+	color: black;
+	cursor: pointer;
+}

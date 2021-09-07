@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LV [] CONTACTOS</title>
+	<meta name="description" content="Venta de ropa personalizada en base a temática anime y geek">
+	<meta name="keywords" content="anime, manga, geek, otaku, polo, polera, zapatilla, dc, marvel, personajes, naruto, dragon ball, boku no hero, batman, flash, garfield, snoopy">
+	<meta name="author" content="lyubovverlorene">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<img src="img/logo.jpg" alt="Logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="historia.html">HISTORIA</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="productos.html">PRODUCTOS</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRENDAS
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="polos.html">POLOS</a></li>
+							<li><a class="dropdown-item" href="poleras.html">POLERAS</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="zapatillas.html">ZAPATILLAS</a></li>
+						</ul>
+					</li>
+				</li><li class="nav-item">
+					<a class="nav-link" href="contactanos.html">CONTACTOS</a>
+				</li>
+			</ul>
+			<form class="d-flex">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+</nav>
+<main class="contacts">
+	<h1 class="contacts__title--light">QUEREMOS CONOCERTE MEJOR</h1>
+	<p class="contacts__title--light">Puedes contactarte con nosotros directamente a través de estos medios</p>
+	<p class="contacts__title--light">Email: lyubovverlorene69@outlook.com</p>
+	<p class="contacts__title--light">WhatsApp: 977554528</p>
+	<p class="contacts__title--light">Nuestros horarios son de Lunes a Domingo de 9:00 a 21:00</p>
+</main>
+<aside class="quiz">
+	<form class="quiz__title--light" action="envio.php" method="post">
+		<fieldset>
+			<legend>Información personal</legend>
+			<label for="Nombre_Apellido"> Nombres y Apellidos </label>
+			<input type="text" id="nombre" name="nombre" placeholder="María Rodriguez Fernandez">
+			<br>
+			<label for="edad"> Edad </label>
+			<input type="number" placeholder="23" id="edad">
+			<br>
+			<label for="">Sexo</label>
+			<label for="">Mujer</label>
+			<input type="radio" value="M" name="sexo">
+			<label for=""> Hombre </label>
+			<input type="radio" value="H" name="sexo">
+			<br>
+			<label for="email">Correo electrónico</label>
+			<input type="email" name="email" placeholder="mrodriguezf@gmail.com">
+			<br>
+			<label for="nombre"> Número de celular</label>
+			<input type="text" name="celular" placeholder="999111555">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Gustos y Preferencias</legend>
+			<label for="">Otaku</label>
+			<input type="checkbox" name="OT" value="Otaku">
+			<br>
+			<label for="">Friki</label>
+			<input type="checkbox" name="FR" value="Friki">
+			<br>
+			<label for=""> Geek</label>
+			<input type="checkbox" name="GK" value="Geek">
+		</fieldset>
+		<br>
+		<fieldset>
+			<label for="">Déjanos tu opinión</label><br>
+			<textarea name="" id="" col="100" rows="10" placeholder="Me gustaría que ..."></textarea>
+			<br>
+			<input type="reset" value="Cancelar">
+			<input type="submit" value="Enviar">
+		</fieldset>
+	</form>
+</aside>
+
+<footer>
+	<h3 class="footer__title--dark">SIGUENOS EN NUESTRAS REDES SOCIALES</h3>
+	<ul class="footer__icons--sm">
+		<a href="https://web.facebook.com/lyubovverlorene69/?ref=py_c">
+			<img class="imagen1" src="img/fb.png" alt="Facebook"></a>
+			<a href="https://www.youtube.com/channel/UCx2ccNP51e-j-R0FkIz9ILQ">
+				<img class="imagen1" src="img/yt.png" alt="Youtube"></a>
+				<a href="https://www.instagram.com/lyubov_verlorene/">
+					<img class="imagen1" src="img/ig.png" alt="Instagram"></a>
+					<a href="https://www.twitch.tv/lyubov_verlorene">
+						<img class="imagen1" src="img/tw.png" alt="Twitch"></a>
+					</ul>
+				</footer>
+			</body>	
+			</html>
