@@ -134,8 +134,10 @@ section {
     height: 40%; }
 
 main {
-  padding: 20px; }
+  padding: 20px;
+  display: flex; }
   main img {
+    display: overflow;
     width: 100%; }
 
 aside {

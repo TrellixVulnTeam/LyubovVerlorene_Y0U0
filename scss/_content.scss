@@ -40,7 +40,10 @@ section{
 
 main{
 	padding: 20px;
-	img{width: 100%}
+	display: flex;
+	img{
+		display: overflow;
+		width: 100%}
 }
 
 aside{
