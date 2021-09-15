@@ -139,6 +139,9 @@ main {
   main img {
     display: overflow;
     width: 100%; }
+  main iframe {
+    width: 100%;
+    text-align: center; }
 
 aside {
   display: flex;

@@ -57,70 +57,92 @@
 		</div>
 	</div>
 </nav>
-<main class="contacts">
-	<h1 class="contacts__title--light">QUEREMOS CONOCERTE MEJOR</h1>
-	<p class="contacts__title--light">Puedes contactarte con nosotros directamente a través de estos medios</p>
-	<p class="contacts__title--light">Email: lyubovverlorene69@outlook.com</p>
-	<p class="contacts__title--light">WhatsApp: 977554528</p>
-	<p class="contacts__title--light">Nuestros horarios son de Lunes a Domingo de 9:00 a 21:00</p>
-</main>
-<aside class="quiz">
-	<form class="quiz__title--light" action="envio.php" method="post">
-		<fieldset>
-			<legend>Información personal</legend>
-			<label for="Nombre_Apellido"> Nombres y Apellidos </label>
-			<input type="text" id="nombre" name="nombre" placeholder="María Rodriguez Fernandez">
-			<br>
-			<label for="edad"> Edad </label>
-			<input type="number" placeholder="23" id="edad">
-			<br>
-			<label for="">Sexo</label>
-			<label for="">Mujer</label>
-			<input type="radio" value="M" name="sexo">
-			<label for=""> Hombre </label>
-			<input type="radio" value="H" name="sexo">
-			<br>
-			<label for="email">Correo electrónico</label>
-			<input type="email" name="email" placeholder="mrodriguezf@gmail.com">
-			<br>
-			<label for="nombre"> Número de celular</label>
-			<input type="text" name="celular" placeholder="999111555">
-		</fieldset>
-		<br>
-		<fieldset>
-			<legend>Gustos y Preferencias</legend>
-			<label for="">Otaku</label>
-			<input type="checkbox" name="OT" value="Otaku">
-			<br>
-			<label for="">Friki</label>
-			<input type="checkbox" name="FR" value="Friki">
-			<br>
-			<label for=""> Geek</label>
-			<input type="checkbox" name="GK" value="Geek">
-		</fieldset>
-		<br>
-		<fieldset>
-			<label for="">Déjanos tu opinión</label><br>
-			<textarea name="" id="" col="100" rows="10" placeholder="Me gustaría que ..."></textarea>
-			<br>
-			<input type="reset" value="Cancelar">
-			<input type="submit" value="Enviar">
-		</fieldset>
-	</form>
-</aside>
+<section class="bg-light py-3">
+	<div class="container-fluid">
+		<div class="row">
+			<article class="col-lg-8 col-md-6">
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								QUEREMOS CONOCERTE MEJOR
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<img src="img/logo.jpg" alt="Marca" class="w-25 d-block mx-auto img-thumbnail">
+								<p class="contacts__title--black">Puedes contactarte con nosotros directamente a través de estos medios</p>
+								<p class="contacts__title--black">Email: lyubovverlorene69@outlook.es</p>
+								<p class="contacts__title--black">WhatsApp: 977554528</p>
+								<p class="contacts__title--black">Nuestros horarios son de Lunes a Domingo de 9:00 a 21:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="well well-sm">
+									<form class="form-horizontal" method="post">
+										<fieldset>
+											<legend class="text-center header">CONTÁCTANOS</legend>
 
-<footer>
-	<h3 class="footer__title--dark">SIGUENOS EN NUESTRAS REDES SOCIALES</h3>
-	<ul class="footer__icons--sm">
-		<a href="https://web.facebook.com/lyubovverlorene69/?ref=py_c">
-			<img class="imagen1" src="img/fb.png" alt="Facebook"></a>
-			<a href="https://www.youtube.com/channel/UCx2ccNP51e-j-R0FkIz9ILQ">
-				<img class="imagen1" src="img/yt.png" alt="Youtube"></a>
-				<a href="https://www.instagram.com/lyubov_verlorene/">
-					<img class="imagen1" src="img/ig.png" alt="Instagram"></a>
-					<a href="https://www.twitch.tv/lyubov_verlorene">
-						<img class="imagen1" src="img/tw.png" alt="Twitch"></a>
-					</ul>
-				</footer>
-			</body>	
-			</html>
+											<div class="form-group">
+												<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+												<div class="col-md-8">
+													<input id="fname" name="name" type="text" placeholder="Nombres" class="form-control">
+												</div>
+											</div>
+											<div class="form-group">
+												<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+												<div class="col-md-8">
+													<input id="lname" name="name" type="text" placeholder="Apellidos" class="form-control">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+												<div class="col-md-8">
+													<input id="email" name="email" type="text" placeholder="Dirección de Email" class="form-control">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+												<div class="col-md-8">
+													<input id="phone" name="phone" type="text" placeholder="Número de Celular" class="form-control">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+												<div class="col-md-8">
+													<textarea class="form-control" id="message" name="message" placeholder="Déjanos algún comentario sobre lo que desees." rows="7"></textarea>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<div class="col-md-12 text-center">
+													<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+												</div>
+											</div>
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<h3 class="footer__title--dark">SIGUENOS EN NUESTRAS REDES SOCIALES</h3>
+						<ul class="footer__icons--sm">
+							<a href="https://web.facebook.com/lyubovverlorene69/?ref=py_c">
+								<img class="imagen1" src="img/fb.png" alt="Facebook"></a>
+								<a href="https://www.youtube.com/channel/UCx2ccNP51e-j-R0FkIz9ILQ">
+									<img class="imagen1" src="img/yt.png" alt="Youtube"></a>
+									<a href="https://www.instagram.com/lyubov_verlorene/">
+										<img class="imagen1" src="img/ig.png" alt="Instagram"></a>
+										<a href="https://www.twitch.tv/lyubov_verlorene">
+											<img class="imagen1" src="img/tw.png" alt="Twitch"></a>
+										</ul>
+									</footer>
+								</body>	
+								</html>
