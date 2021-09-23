@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Zilla+Slab:wght@400;700&display=swap");
 @media only screen and (min-width: 768px) {
   body {
     grid-template-columns: repeat(3, 1fr);
@@ -113,29 +113,27 @@ h6 {
   list-style: none; }
 
 a, p, h1, h2, h3 {
-  font-family: "Economica", sans-serif; }
+  font-family: "Zilla Slab", serif; }
 
-nav {
+nav, article, section, main, aside, footer {
   padding: 20px; }
-  nav img {
-    width: 10%; }
+
+nav img {
+  width: 10%; }
 
 article {
   display: flex;
-  display: inline-block;
-  padding: 20px; }
+  display: inline-block; }
   article img {
     width: 40%; }
 
 section {
   display: flex;
-  justify-content: space-between;
-  padding: 20px; }
+  justify-content: space-between; }
   section img {
     height: 40%; }
 
 main {
-  padding: 20px;
   display: flex; }
   main img {
     display: overflow;
@@ -146,8 +144,7 @@ main {
 
 aside {
   display: flex;
-  display: inline-block;
-  padding: 20px; }
+  display: inline-block; }
   aside img {
     width: 30%; }
 
@@ -298,7 +295,6 @@ aside {
 footer {
   background-color: #322c2c;
   justify-content: space-beatween;
-  padding: 10px;
   text-align: center; }
   footer ul li {
     list-style: none; }
