@@ -1,5 +1,5 @@
 {
-  "name": "tarea",
+  "name": "jx",
   "version": "1.0.0",
   "description": "lv",
   "main": "index.js",
@@ -12,6 +12,14 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
-    "nodemon": "^2.0.12"
-  }
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LyuboVerlorene69/LyubovVerlorene.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LyuboVerlorene69/LyubovVerlorene/issues"
+  },
+  "homepage": "https://github.com/LyuboVerlorene69/LyubovVerlorene#readme"
 }
